@@ -1,0 +1,81 @@
+@font-face { font-family: roboto-mono;  src: url('Roboto_Mono/static/RobotoMono-Regular.ttf'); }
+
+
+body {
+        margin: 0;
+        font-family:roboto-mono;
+}
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(214, 238, 240);
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    color: rgb(109, 125, 126);
+    font-size: 22px;
+   
+}
+
+li:not(:last-child) {
+    margin-right: 60px;
+}
+.nav-label {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    cursor: pointer;
+}
+#nav {
+    display: none;
+}
+.navbar{
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    background: red;
+    top: 0;
+    left: 0;
+}
+.slider{
+    width: 100%;
+    height: 500px;
+}
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-button {
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 30px 45px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'roboto-mono';
+    animation: spin 1s cubic-bezier(0,.78,1,.39) infinite;
+}
+@keyframes bottomUp {
+    0% {
+        top: 54%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+     }
+}
